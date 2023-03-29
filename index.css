@@ -1,0 +1,31 @@
+body{
+    background-color: aliceblue;
+}
+#calculator{
+    width: 17%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+#calculator > div > div{
+    font-size: 130%;
+    display: visible;
+    color: black;
+    background-color: white;
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: -101%;
+    row-gap: 20%;
+}
+button{
+    font-size: 110%;
+    height: 180%;
+    width: 90%;
+    background-color: white;
+    border-radius: 50%;
+}
+.span-two{
+    grid-column: span 2;
+}
+
