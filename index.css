@@ -1,6 +1,6 @@
 body{
     margin-top: 60%;
-    background-color: #362c2c;
+    background-color: #282828;
 }
 #calculator{
     width: 90%;
@@ -31,7 +31,7 @@ button{
 }
 .numbers{
     color: white;
-    background-color: #383232;
+    background-color: #383838;
 }
 .operators{
     color: white;
