@@ -1,61 +1,77 @@
 body{
-    background-color: aliceblue;
+    margin-top: 60%;
+    background-color: #1c1a1a;
 }
 #calculator{
-    width: 17%;
-    margin-left: 35%;
-    margin-top: 10%;
-}
-#calculator > div > div{
-    font-size: 130%;
-    display: visible;
-    color: black;
-    background-color: white;
+    width: 70%;
+    padding-left: 15%;
 }
 #grid-container{
+    width:100%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    column-gap: -101%;
-    row-gap: 20%;
+    grid-template-columns: 25% 25% 25% 25%;;
+    row-gap: 45%;
+
+}
+#current-input{
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    text-align: end;
+    color: white;
+    width: 55%;
+    height: 5%;
 }
 button{
-    font-size: 110%;
-    height: 180%;
-    width: 90%;
-    background-color: white;
     border-radius: 50%;
+    border: none;
+    height: 280%;
+    width: 80%;
+    box-shadow: 2px 2px 2px black;
+}
+.numbers{
+    color: white;
+    background-color: #272323;
+}
+.operators{
+    color: white;
+    background-color: purple;
+}
+#clearAll{
+    color: white;
+    background-color: rgb(253, 160, 0); 
+}
+#delete{
+    color: white;
+    background-color: rgb(158, 100, 0);
+}
+#equalto{
+    color: white;
+    background-color: purple;
+    margin-left: 8%;
 }
 .span-two{
     grid-column: span 2;
+    border-radius: 30% 30%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 500px) {
     body{
-        background-color: rgb(50, 77, 100) !important;
+        margin-top: 20%;
+        background-color: #1c1a1a;
     }
     #calculator{
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 10%;
-    }
-    #calculator > div > div{
-        font-size: 130%;
-        display: visible;
-        color: black;
-        background-color: white;
+        width: 25%;
+        padding-left: 37.5%;
     }
     #grid-container{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        column-gap: -101%;
-        row-gap: 20%;
+        row-gap: 45%;
+    
     }
-    button{
-        font-size: 110%;
-        height: 180%;
-        width: 90%;
-        background-color: white;
-        border-radius: 50%;
+    #current-input{
+        position: absolute;
+        top: 29%;
+        left: 19%;
+        width: 40%;
     }
 }
-

@@ -55,14 +55,13 @@ console.log(clearAllButton)
 console.log(equalToButton)
 let firstSet = '';
 let secondSet = '';
-// let thirdSet = '';
 // let fourthSet = '';
 // let fifthSet = '';
 let opValue = operationButton.values;
 console.log(opValue);
 let part1 = true;
-let part2 = false;
 // let part3 = true;
+//currentInputElement = document.getElementById("current-input").removeAttribute("hidden");
 
 
 
@@ -87,14 +86,14 @@ numberButton.forEach((button)=>{
             secondSet += ev.target.value;
             currentInputElement.innerHTML = secondSet;
         }
-        if(part2 === false){
-            if(thirdSet.length === 5){
-                currentInputElement.innerHTML = 'max values reaached';
-                return;
-            }
-            thirdSet += ev.target.value;
-            currentInputElement.innerHTML = thirdSet;
-        }
+        // if(part2 === true){
+        //     if(thirdSet.length === 5){
+        //         currentInputElement.innerHTML = 'max values reaached';
+        //         return;
+        //     }
+        //     thirdSet += ev.target.value;
+        //     currentInputElement.innerHTML = thirdSet;
+        // }
         // if(!part2 === true){
             //     if(fourthSet.length === 5){
                 //         currentInputElement.innerHTML = 'max values reaached';
@@ -187,6 +186,7 @@ equalToButton.addEventListener('click',(event)=>{
         firstSet = ''
         secondSet = ''
         part1 = true
+        
     }
     if(operate === '-'){
         let result= Number(firstSet)  -  Number(secondSet) 
